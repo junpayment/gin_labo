@@ -1,0 +1,12 @@
+hash: 6892b5c9a6efa05c51a52fa6155419beeb226c9ed605e3331a2697b47d29dbcf
+updated: 2017-12-28T13:11:17.894008+09:00
+imports:
+- name: github.com/gin-gonic/gin
+  version: 6626358d4fefa40ec37ca4b502c6c7d0cdea6d18
+- name: github.com/go-xorm/xorm
+  version: 3480244cd27f8a3ca33e51e798346fa4064f25e2
+  subpackages:
+  - github.com/mattn/go-sqlite3
+- name: github.com/mattn/go-slim
+  version: 42ce8a084f7e1ce22439960162d11c488a138f93
+testImports: []
