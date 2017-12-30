@@ -1,12 +1,44 @@
-hash: 6892b5c9a6efa05c51a52fa6155419beeb226c9ed605e3331a2697b47d29dbcf
-updated: 2017-12-28T13:11:17.894008+09:00
+hash: 4b052ec1548f6f857485ffdef16806f421873a5b3d4b48198f3295ff2a6c53a9
+updated: 2017-12-29T04:53:37.543667+09:00
 imports:
+- name: github.com/gin-contrib/sse
+  version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
 - name: github.com/gin-gonic/gin
   version: 6626358d4fefa40ec37ca4b502c6c7d0cdea6d18
+  subpackages:
+  - binding
+  - json
+  - render
 - name: github.com/go-xorm/xorm
-  version: 3480244cd27f8a3ca33e51e798346fa4064f25e2
+  version: 5275c0de3fe175479a08348c9fc8ccd9a58cca2d
   subpackages:
   - github.com/mattn/go-sqlite3
+- name: github.com/golang/protobuf
+  version: 1e59b77b52bf8e4b449a57e6f79f21226d571845
+  subpackages:
+  - proto
+- name: github.com/json-iterator/go
+  version: 96fcb84835b0447f3de9d7addb313c5487071533
+- name: github.com/junpayment/go-slim
+  version: b8ec4a150321c7be325a415d74f6001cd895314b
+- name: github.com/mattn/go-isatty
+  version: 6ca4dbf54d38eea1a992b3c722a76a5d1c4cb25c
 - name: github.com/mattn/go-slim
   version: 42ce8a084f7e1ce22439960162d11c488a138f93
+  subpackages:
+  - vm
+- name: github.com/suapapa/go_sass
+  version: efb3a6706e0db56eba93016a97b054e2053b7871
+- name: github.com/ugorji/go
+  version: f2ec36a67857099bae63da282236d9d4c0d2bed6
+  subpackages:
+  - codec
+- name: golang.org/x/sys
+  version: 83801418e1b59fb1880e363299581ee543af32ca
+  subpackages:
+  - unix
+- name: gopkg.in/go-playground/validator.v8
+  version: 5f1438d3fca68893a817e4a66806cea46a9e4ebf
+- name: gopkg.in/yaml.v2
+  version: 287cf08546ab5e7e37d55a84f7ed3fd1db036de5
 testImports: []

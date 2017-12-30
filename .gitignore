@@ -68,3 +68,5 @@ fabric.properties
 # glide
 vendor/
 
+# scss
+static/css/*.css

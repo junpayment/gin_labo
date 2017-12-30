@@ -1,8 +1,8 @@
 package: github.com/junpayment/gin_labo
-
 import:
 - package: github.com/gin-gonic/gin
 - package: github.com/go-xorm/xorm
   subpackages:
   - github.com/mattn/go-sqlite3
-- package: github.com/mattn/go-slim
+- package: github.com/junpayment/go-slim
+- package: github.com/suapapa/go_sass
