@@ -1,5 +1,5 @@
-hash: 4b052ec1548f6f857485ffdef16806f421873a5b3d4b48198f3295ff2a6c53a9
-updated: 2017-12-29T04:53:37.543667+09:00
+hash: abef3e6ba6bcaec43e3ec5692fa8ea4df98bdd3a814cb723cd444f9899746c43
+updated: 2017-12-31T03:13:25.703445+09:00
 imports:
 - name: github.com/gin-contrib/sse
   version: 22d885f9ecc78bf4ee5d72b937e4bbcdc58e8cae
@@ -9,10 +9,15 @@ imports:
   - binding
   - json
   - render
+- name: github.com/go-xorm/builder
+  version: a4a881a4e552fcb5473f39e8b9f7d9f3457a7fb0
+- name: github.com/go-xorm/core
+  version: cb1d0ca71f42d3ee1bf4aba7daa16099bc31a7e9
 - name: github.com/go-xorm/xorm
   version: 5275c0de3fe175479a08348c9fc8ccd9a58cca2d
   subpackages:
   - github.com/mattn/go-sqlite3
+  - migrate
 - name: github.com/golang/protobuf
   version: 1e59b77b52bf8e4b449a57e6f79f21226d571845
   subpackages:
@@ -27,12 +32,20 @@ imports:
   version: 42ce8a084f7e1ce22439960162d11c488a138f93
   subpackages:
   - vm
+- name: github.com/mattn/go-sqlite3
+  version: d5ffb5c0cca8778699a929b236766f4a7af674e8
 - name: github.com/suapapa/go_sass
   version: efb3a6706e0db56eba93016a97b054e2053b7871
 - name: github.com/ugorji/go
   version: f2ec36a67857099bae63da282236d9d4c0d2bed6
   subpackages:
   - codec
+- name: github.com/urfave/cli
+  version: 39908eb08fee7c10d842622a114a5c133fb0a3c6
+- name: golang.org/x/net
+  version: d866cfc389cec985d6fda2859936a575a55a3ab6
+  subpackages:
+  - context
 - name: golang.org/x/sys
   version: 83801418e1b59fb1880e363299581ee543af32ca
   subpackages:

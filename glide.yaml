@@ -6,3 +6,4 @@ import:
   - github.com/mattn/go-sqlite3
 - package: github.com/junpayment/go-slim
 - package: github.com/suapapa/go_sass
+- package: github.com/urfave/cli
