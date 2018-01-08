@@ -1,4 +1,5 @@
 make:
+  - curl https://glide.sh/get | sh
   - cd $GOPATH/src/github.com/junpayment/gin_labo/;
   - glide install;
   - cd $GOPATH/src/github.com/junpayment/gin_labo/vendor/github.com/suapapa/go_sass/libsass;
