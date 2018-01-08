@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-export GOPATH=/var/app/current
-export GOBIN=/var/app/current/bin
+export GOPATH=/var/app/staging
+export GOBIN=/var/app/staging/bin
 export PATH=$PATH:$GOBIN
 
 echo "install glide..."
