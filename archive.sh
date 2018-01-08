@@ -11,4 +11,5 @@ cp -a $DEST_DIR/go/src/github.com/junpayment/gin_labo/.ebextensions $DEST_DIR/go
 cp $DEST_DIR/go/src/github.com/junpayment/gin_labo/Buildfile $DEST_DIR/go/
 cp $DEST_DIR/go/src/github.com/junpayment/gin_labo/Procfile $DEST_DIR/go/
 
-zip $DEST_DIR/go.zip $DEST_DIR/go
+cd $DEST_DIR/go
+zip ../go.zip -r * .[^.]*
