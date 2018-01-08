@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-GOPATH=/var/app/current
-GOBIN=/var/app/current/bin
-PATH=$PATH:$GOBIN
+export GOPATH=/var/app/current
+export GOBIN=/var/app/current/bin
+export PATH=$PATH:$GOBIN
 
 curl https://glide.sh/get | sh
 
