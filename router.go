@@ -9,7 +9,7 @@ import (
 	"os"
 )
 
-const PORT = "8000"
+const PORT = "5000"
 var router *gin.Engine
 
 // initialize routes
