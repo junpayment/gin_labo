@@ -6,6 +6,7 @@ import (
 	"github.com/suapapa/go_sass"
 	"log"
 	"fmt"
+	"os"
 )
 
 const PORT = "8000"
@@ -33,13 +34,20 @@ func initIndex() {
 }
 
 func setStatic() {
+  parentDir := os.Getenv("PARENT_DIR")
+  if "" == parentDir {
+    parentDir, _ = os.Getwd()
+	}
+	fmt.Println(parentDir)
+	fmt.Println(parentDir + "/static/css")
+
 	// scss一括コンパイル
 	var sc sass.Compiler
-	err := sc.CompileFolder("apps/scss", "static/css")
+	err := sc.CompileFolder(parentDir + "/apps/scss", parentDir + "/static/css")
 	if nil != err {
 		log.Fatal(err)
 	}
 
 	// contents以下をpublicとして公開
-	router.Static("/contents", "./static")
+	router.Static("/contents", parentDir + "/static")
 }

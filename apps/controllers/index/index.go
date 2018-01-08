@@ -5,10 +5,16 @@ import (
 	"github.com/junpayment/go-slim"
 	"log"
 	"path/filepath"
+	"os"
 )
 
 func Index(c *gin.Context) {
-	viewPath, _ := filepath.Abs("apps/views/index/index.slim")
+	parentDir := os.Getenv("PARENT_DIR")
+	if "" == parentDir {
+		parentDir, _ = os.Getwd()
+	}
+
+	viewPath, _ := filepath.Abs(parentDir + "/apps/views/index/index.slim")
 	tmpl, err := slim.ParseFile(viewPath)
 	if err != nil {
 		log.Fatal(err)
