@@ -35,6 +35,7 @@ func initIndex() {
 
 func setStatic() {
   parentDir := os.Getenv("PARENT_DIR")
+  log.Println(parentDir)
   if "" == parentDir {
     parentDir, _ = os.Getwd()
 	}
