@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 GOPATH=/var/app/current
+GOBIN=/var/app/current/bin
+PATH=$PATH:$GOBIN
 
 curl https://glide.sh/get | sh
 cd $GOPATH/src/github.com/junpayment/gin_labo/;
