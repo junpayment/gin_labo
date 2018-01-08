@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-GOPATH=${GOPATH}:$(cd $(dirname $0); pwd)
+GOPATH=${GOPATH}:/var/app/current
 
 curl https://glide.sh/get | sh
 cd $GOPATH/src/github.com/junpayment/gin_labo/;
