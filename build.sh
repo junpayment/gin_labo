@@ -21,6 +21,6 @@ echo "install libsass done"
 
 echo "build go binary"
 cd $GOPATH
-go install github.com/junpayment/gin_labo
+echo $GOPATH; pwd
+go install github.com/junpayment/gin_labo || echo error_occuered!
 echo "build go binary"
-
